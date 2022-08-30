@@ -1,0 +1,472 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*------------------------------------------------- HEADER -------------------------------------------------*/
+
+.header--background{
+  background: url('../public/images/desktop/image-hero.jpg') no-repeat center center/cover;
+}
+
+.hamburger{
+  display: none;
+}
+
+.header--background::before{
+  content: "";
+  background-color: black;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 44.65vw;
+  position: absolute;
+  opacity: 25%;
+}
+
+.header{
+  width: 80%;
+  margin: 0 auto 13vw auto;
+  color: white;
+  position: relative;
+}
+
+.navbar{
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0px;
+  position: absolute;
+}
+
+.nav--logo{
+  width: 12rem;
+}
+
+.nav--elements{
+  font-size: 1rem;
+  margin-left: 20px;
+}
+
+.nav--elements span{
+  margin: 20px;
+}
+
+.hoverEffect{
+  text-decoration: none;
+  color: white;
+  position: relative;
+  padding-bottom: 0.4rem;
+}
+
+.hoverEffect::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 1.2px;
+  background-color: white;
+  transition: width 0.25s ease-out;
+}
+
+.hoverEffect:hover::before{
+  width: 100%;
+}
+
+
+
+/*-------------------------------------------- Header(Box) --------------------------------------------------------*/
+
+.header--box{
+  position: relative;
+  border: solid white 2px;
+  display: inline-block;
+  padding: 3.8% 8% 2.8% 3.8%;
+  margin: 12vw 0;
+  width: 38vw;
+}
+
+
+.box-title{
+  font-size: 5.1vw;
+  text-transform: uppercase;
+}
+
+/* HERO */
+
+.hero--intro{
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+}
+
+.hero--img{
+  width: 50vw;
+  z-index: -1;
+  position: absolute;
+}
+
+.text--box{
+  background-color: white;
+  padding: 6vw;
+  margin: 12vw 0 0 40vw;
+}
+
+.text--box h7{
+  font-size: 3.4vw;
+  text-transform: uppercase;
+  width: 10px;
+}
+
+.text--box p{
+  font-size: 1.1rem;
+  line-height: 25px;
+  width: 31vw;
+}
+
+/*-------------------------------------------------- CREATIONS -------------------------------------------------------------*/
+
+.creation{
+  width: 80%;
+  margin: 8vw auto 8vw;
+}
+
+.creation--head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.creation--title{
+  font-size: 3.4vw;
+  text-transform: uppercase;
+}
+
+.creation--btn2{
+  display: none;
+}
+
+.creation--btn1{
+  text-transform: uppercase;
+  background-color: black;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  padding: 1rem 3rem;
+}
+
+.creation--btn1 > a{
+  text-decoration: none;
+  color: white;
+}
+
+/*----------------------------------------------------- Creation gallery -------------------------------------------------*/
+
+.creation--mobImg{
+  display: none;
+}
+
+.creation--gallery{
+  margin: 8vw 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vw;
+  position: relative;
+}
+
+.creation--deskImg{
+  width: 18.2vw;
+}
+
+
+.overlay{
+  position: absolute; 
+  background: black;
+  width: 18.2vw;
+  height: 32vw;
+  margin: -32.2vw auto;
+  opacity: 20%;
+}
+
+.overlay:hover{
+  background-color: rgb(255, 255, 255);
+  opacity: 60%;
+  cursor: pointer;
+}
+
+.creation--name{
+  position: absolute;
+  color: white;
+  font-size: 2.2vw;
+  width: 12vw;
+  word-wrap: break-word;
+  margin: 25vw 0 0 3vw;
+  z-index: +1;
+  pointer-events: none;
+}
+
+/*-------------------------------------------------------- footer ---------------------------------------------------------*/
+
+.footer{
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 10rem;
+}
+
+.footer--logo{
+  width: 10rem;
+}
+
+.footer-left{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: flex-end;
+}
+
+.footer-right{
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.footer--elements{
+  display: flex;
+  gap: 2.8vw;
+  font-size: 1.4em;
+}
+
+.footer--elements > span > a{
+  text-decoration: none;
+  color: white;
+}
+
+.footer--icons{
+  display: flex;
+  gap: 1rem;
+}
+
+.footer--copyright{
+  font-size: 1vw;
+  color: rgba(255, 255, 255, 0.511);
+}
+
+
+/*---------------------------------------------- RESPONSIVENESS ---------------------------------------------------*/
+
+
+@media(max-width: 1105px){
+  
+  .header--background::before{
+    height: 56.8vw;
+  }
+  .header--box{
+    margin: 18vw 0;
+  }
+}
+
+@media(max-width: 960px){
+  .text--box p{
+    font-size: 1rem;
+    line-height: 25px;
+    width: 36vw;
+  }
+  
+  .creation--title{
+    font-size: 4vw;
+    text-transform: uppercase;
+  }
+}
+
+/*------------------------------------------------ Mobile friendly ------------------------------------------------------------*/
+
+@media(max-width: 832px){
+
+/* HEADER */
+
+  .nav--logo{
+    width: 12rem;
+  }
+
+  .header--background{
+    background: url('../public/images/mobile/image-hero.jpg') no-repeat center center/cover;
+    height: 100%;
+    margin-bottom: 24vw;
+  }
+
+  .header--background::before{
+    display: none;
+  }
+
+  .nav--elements{
+    display: none;
+  }
+
+  .hamburger{
+    display: unset;
+  }
+
+/* Header(Box) */
+
+.header--box{
+  margin: 50vw auto;
+  width: auto;
+}
+
+.box-title{
+  font-size: 10.1vw;
+  text-transform: uppercase;
+  word-wrap: break-word;
+}
+
+/* HERO */
+
+  .hero--img{
+    position: relative;
+    z-index: none;
+    width: 100%;
+  }
+  
+  .hero--intro{
+    flex-direction: column;
+  }
+  
+  .text--box{
+    padding: 0;
+    margin: 6vw 0 4vw;
+    text-align: center;
+  }
+  
+  .text--box h7{
+    font-size: 1.6rem;
+    width: 0;
+  }
+  
+  .text--box p{
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  /* Creation */
+
+  .creation{
+    margin: 13vw auto 11vw;
+  }
+  
+  .creation--title{
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    text-align: center;
+    width: 25rem;
+    margin: auto;
+  }
+  .creation--btn1{
+    display: none;
+  }
+  .creation--btn2{
+    display: block;
+    width: 18vw;
+    text-align: center;
+    margin: auto;
+    text-transform: uppercase;
+    background-color: black;
+    font-size: 3vw;
+    letter-spacing: 3px;
+    padding: 3vw 6vw;
+  }
+  
+  .creation--btn2 > a{
+    text-decoration: none;
+    color: white;
+  }
+    
+  /* Creation gallery */
+  
+  .creation--mobImg{
+    display: flex;
+    width: 100%;
+  }
+  
+  .creation--gallery{
+    margin: 8vw 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+    position: relative;
+  }
+  
+  .creation--deskImg{
+    display: none;
+  }
+  
+  
+  .overlay{
+    width: 100%;
+    height: 29.5vw;
+    margin: -29.5vw auto;
+  }
+  
+  
+  .creation--name{
+    font-size: 4.2vw;
+    width: 22.5vw;
+    margin: 12vw 0 0 3vw;
+  }
+  
+
+
+/* FOOTER */
+
+.footer{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem 10rem;
+}
+
+.footer--logo{
+  width: 10rem;
+  margin-bottom: 1rem;
+}
+
+.footer--elements{
+  font-size: 1.8em;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-right{
+  gap: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-left{
+  margin-top: 3rem;
+  align-items: center;
+}
+
+.footer--copyright{
+  font-size: 1.2rem;
+}
+
+}
+
+@media(max-width: 380px){
+  .creation--title{
+    font-size: 1.8rem;
+  }
+}
