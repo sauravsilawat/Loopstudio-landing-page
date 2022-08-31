@@ -27,7 +27,7 @@ shot
 ### Links
 
 - Solution URL: [https://loopstudio-landing-saurav.netlify.app/](https://loopstudio-landing-saurav.netlify.app/)
-- Live Site URL: [https://loopstudio-landing-saurav.netlify.app/](https://loopstudio-landing-saurav.netlify.app/)
+- Live Site URL: [https://www.frontendmentor.io/solutions/responsive-landing-page-using-react-1EoH6o8ov9](https://www.frontendmentor.io/solutions/responsive-landing-page-using-react-1EoH6o8ov9)
 
 ### Built with
 
