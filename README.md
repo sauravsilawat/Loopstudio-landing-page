@@ -18,15 +18,16 @@ Users should be able to:
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
 
-### Screenshot
+### Screen
 
-![](./screenshot.jpg)
+![cvtyalmaoldqbg3jivi1](https://user-images.githubusercontent.com/96677760/187605608-0e7f031e-11d7-4f3e-8d59-d709eccf5bef.jpg)
+shot
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://loopstudio-landing-saurav.netlify.app/](https://loopstudio-landing-saurav.netlify.app/)
+- Live Site URL: [https://loopstudio-landing-saurav.netlify.app/](https://loopstudio-landing-saurav.netlify.app/)
 
 ### Built with
 
