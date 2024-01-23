@@ -1,6 +1,4 @@
-# Frontend Mentor - Loopstudios landing page solution
-
-This is a solution to the [Loopstudios landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw).
+# Landing Page
 
 ## Table of contents
 
@@ -26,8 +24,7 @@ shot
 
 ### Links
 
-- Solution URL: [https://loopstudio-landing-saurav.netlify.app/](https://loopstudio-landing-saurav.netlify.app/)
-- Live Site URL: [https://www.frontendmentor.io/solutions/responsive-landing-page-using-react-1EoH6o8ov9](https://www.frontendmentor.io/solutions/responsive-landing-page-using-react-1EoH6o8ov9)
+- Live URL: [https://landing-saurav.netlify.app/](https://loopstudio-landing-saurav.netlify.app/)
 
 ### Built with
 
@@ -43,5 +40,4 @@ Through this challenge I learn how to create a fully responsive website with dif
 
 ## Author
 
-- Frontend Mentor - [@sauravsilawat](https://www.frontendmentor.io/profile/sauravsilawat)
 - Twitter - [@sauravsilawat](https://www.twitter.com/sauravsilawat)
